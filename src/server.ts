@@ -18,6 +18,8 @@ import { buildContext } from './app/utils/context';
 import app from './app';
 import notFound from './app/middlewares/notFound';
 import globalErrorHandler from './app/middlewares/globalErrorhandler';
+import dns from "node:dns/promises";
+dns.setServers(["1.1.1.1"]);
 
 async function bootstrap() {
   // Connect DB
