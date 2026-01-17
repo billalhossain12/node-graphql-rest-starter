@@ -1,5 +1,5 @@
-import { model, Schema } from "mongoose";
-import { IPublisher } from "./publisher.interface";
+import { model, Schema } from 'mongoose';
+import { IPublisher } from './publisher.interface';
 
 const publisherSchema = new Schema<IPublisher>({
   name: {
@@ -16,4 +16,4 @@ const publisherSchema = new Schema<IPublisher>({
   },
 });
 
-export const Publisher = model<IPublisher>("Publisher", publisherSchema);
+export const Publisher = model<IPublisher>('Publisher', publisherSchema);

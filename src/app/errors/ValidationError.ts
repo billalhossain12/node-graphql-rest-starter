@@ -5,4 +5,3 @@ export class ValidationError extends AppError {
     super('Validation failed', 'VALIDATION_ERROR', details);
   }
 }
-

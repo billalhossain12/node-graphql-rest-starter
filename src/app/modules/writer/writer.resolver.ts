@@ -6,7 +6,6 @@ import { UserServices } from '../user/user.service';
 import { ContextUser } from '../../utils/context';
 
 export const writerResolvers = {
-  
   Query: {
     Writers: async (_: unknown, __: unknown, context: ContextUser) => {
       const Writers = await WriterServices.getAllWriters(context);
